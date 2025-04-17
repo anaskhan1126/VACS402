@@ -26,9 +26,37 @@
 // }
 // mul();
 //============Function with default parameters================================
-let div=function(m,n=2){
-    console.log(m/n);
+// let div=function(m,n=2){
+//     console.log(m/n);
 
+// }
+// div(4)
+//=============IIFE(Imidiately invoked functon expression)==========================================================
+// (
+//     function demo(){
+//         console.log("hello anas");
+//     }
+// )();
+// (
+//     function add(){
+//         console.log(2+4);
+//     }
+// )();
+//!===========function closure============
+// function add1(no1,no2){
+//     let sum=no1+no2;
+//     console.log("addition of"+sum);
+//     return function(no3){
+//         let mul=no1*no2*no3;
+//         return mul;
+//     }
+// }
+//===============anonymous function============================
+let app=function(){
+    console.log("this is anas khan");
 }
-div(4)
-//=============
+app();
+//----------------anonymous function using arrow---------------
+//single line statement
+let app=(a)=>{console.log("Single line statement")}
+
