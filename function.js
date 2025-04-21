@@ -52,11 +52,22 @@
 //     }
 // }
 //===============anonymous function============================
-let app=function(){
-    console.log("this is anas khan");
-}
-app();
+// let app=function(){
+//     console.log("this is anas khan");
+// }
+// app();
 //----------------anonymous function using arrow---------------
 //single line statement
-let app=(a)=>{console.log("Single line statement")}
+//Rest parameters=
+function add(c,d,...numbers){
+    console.log(c+d);
+    console.log(numbers);
+    let sum=0;
+    for(let i of numbers){
+        sum+=i;
+        }
+        console.log(sum);
+}
+add(1,2,3,34,544,66,321,22,11,98);
+
 
